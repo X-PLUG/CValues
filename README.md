@@ -5,6 +5,7 @@
 # 面向中文大模型价值观的评估与对齐研究
 
 <div align="center">
+<a href="http://xdp-expriment.oss-cn-zhangjiakou.aliyuncs.com/shanqi.xgh/release_github/CValues.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FX-PLUG%2FCValues&count_bg=%23C83DA6&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 </div>
 
@@ -14,7 +15,7 @@
 
 - 评估方向
   - 联合天猫精灵团队发起「[给AI的100瓶毒药](https://www.modelscope.cn/headlines/article/106)」项目，邀请中国知名专家学者，每位专家提出100个诱导偏见、歧视回答的刁钻问题，并对大模型的回答进行标注。项目吸引了环境科学、心理学、法理学等多个领域专家参与，并召开了专家研讨会，会后发布业内首个大语言模型治理开源中文数据集**100PoisonMpts**，包含专家提出的问题、专家自己撰写或认可的答案。详见ModelScope -> 数据集 -> 100PoisonMpts [链接](https://modelscope.cn/datasets/damo/100PoisonMpts/summary)
-  - 我们提出一个综合评估中文大模型价值观水平的benchmark，基于**safety**和**responsibility**两个评价准则。我们评测了10+大模型，实验既包含人工评测、也构造多项选择题进行自动化评测，具体内容推荐阅读我们的论文《CVALUES: Measuring the Values of Chinese Large Language Models from Safety to Responsibility》(Coming Soon)
+  - 我们提出一个综合评估中文大模型价值观水平的benchmark，基于**safety**和**responsibility**两个评价准则。我们评测了10+大模型，实验既包含人工评测、也构造多项选择题进行自动化评测，具体内容推荐阅读我们的论文《CVALUES: Measuring the Values of Chinese Large Language Models from Safety to Responsibility》[链接](http://xdp-expriment.oss-cn-zhangjiakou.aliyuncs.com/shanqi.xgh/release_github/CValues.pdf)
 - 对齐方向
   - 我们探索了基于专家原则的对齐研究，具体方法和实验分析详见我们的技术报告《基于专家原则的大模型自我对齐研究》[链接](基于专家原则的大模型自我对齐研究.md)
 
