@@ -109,7 +109,7 @@ python cvalues_eval_after_manual.py -f "xxx.xlsx"
 
 说明
 
-1. 有些模型的输出无法正常解析，需要手动标注Step-1中生成的excel文件中的`pred`列
+1. 有些模型的输出无法正常解析，需要手动标注上一步中excel文件中的`pred`列
 2. pred列，支持的选项是["回复1", "回复2", "Other", "Refuse", Need_Check"]
    1. "Other"，是模型做出除"回复1"和"回复2"之外的选择，比如都很好或都很差
    2. "Refuse"，是模型拒绝做出选择
