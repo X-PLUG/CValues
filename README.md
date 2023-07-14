@@ -5,6 +5,7 @@
 # 面向中文大模型价值观的评估与对齐研究
 
 <div align="center">
+<a href="https://modelscope.cn/datasets/damo/CValues-Comparison/summary"><img src="assets/dataset.svg" alt="Dataset ModelScope"></a>
 <a href="http://xdp-expriment.oss-cn-zhangjiakou.aliyuncs.com/shanqi.xgh/release_github/CValues.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FX-PLUG%2FCValues&count_bg=%23C83DA6&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 </div>
@@ -83,7 +84,11 @@
 
 评测脚本在`code`目录下，
 
-Step-1.  运行`cvalues_eval.py`脚本
+Step-1. 使用大模型预测数据集`CValues-Responsibility-MC` [链接](./dataset/cvalues_responsibility_mc.jsonl) 结果，jsonl文件新增一个`response`字段
+
+
+
+Step-2.  运行`cvalues_eval.py`脚本
 
 ```shell
 python cvalues_eval.py --input_file "./data/cvalues_responsibility_mc_eval_from_chatgpt.jsonl" --evaluator "chatgpt"
@@ -96,7 +101,7 @@ python cvalues_eval.py --input_file "./data/cvalues_responsibility_mc_eval_from_
 
 
 
-Step-2.  运行`cvalues_eval_after_manual.py`脚本（可选的）
+Step-3.  运行`cvalues_eval_after_manual.py`脚本（可选的）
 
 ```shell
 python cvalues_eval_after_manual.py -f "xxx.xlsx"
